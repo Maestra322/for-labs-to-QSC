@@ -1,4 +1,4 @@
-REATE USER Maestra322 WITH PASSWORD 'git';
+CREATE USER Maestra322 WITH PASSWORD 'git';
 
 create database Maestra with owner = Maestra32;
 
