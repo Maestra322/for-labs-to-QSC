@@ -12,7 +12,7 @@ insert into mas1 (first_name, middle_name, last_name, email) values
 ('Мариша', 'Александровна', 'Ладыгина', 'Marisha@bk.ru'),
 ('Мирка', 'Александровна', 'Братскова', 'Mirka323@bk.ru'),
 ('Марина', 'Олеговна', 'Дигина', 'Morka123@bk.ru'),
-('Алина', 'Петровна', 'Грач', 'Grach@bk.ru');
+('Амина', 'Петровна', 'Грач', 'Grach@bk.ru');
 */
 -- alter table mas1 rename column email to e_mail;
 -- alter table mas1 add constraint e_mail_unique unique(e_mail);
