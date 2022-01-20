@@ -46,3 +46,51 @@ update mas1 set birth_date = '2002-06-22' where id = 25;
 update mas1 set birth_date = '2001-04-21' where id = 26;
 update mas1 set birth_date = '2000-06-22' where id = 27;
 */
+
+/*
+create table role ( 
+name varchar(20) not null, 
+primary key (name) ); 
+*/
+ 
+
+-- alter table mas1 add column role_name varchar(20);
+ 
+--  alter table mas1 alter column role_name set not NULL;
+
+-- alter table mas1 add column login varchar(64);
+
+-- alter table mas1 add column password varchar(64);
+
+-- alter table mas1 add constraint FK_MAS1_ROLE foreign key (role_name) references role; 
+
+/*
+create table permission (
+id bigserial not null,
+	name varchar(30) not null
+);
+*/
+
+
+-- select * from permission;
+
+/*
+create table role_permission (
+	role_name varchar(20) not null,
+	permission_id bigint not null
+);
+*/
+
+-- alter table role_permission add constraint FK_role_premission_ROLE foreign key (role_name) references role;
+/*
+alter table permission 
+  add primary key(id); 
+  */
+
+-- alter table role_permission add constraint FK_role_primission_premission foreign key (permission_id) references permission; 
+
+/*
+alter table mas1 
+  add primary key(id); 
+  */
+ 
