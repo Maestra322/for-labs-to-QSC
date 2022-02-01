@@ -56,4 +56,46 @@ select distinct first_name, middle_name, last_name from mas1 where role_name in
 
 -- select m.first_name, m.middle_name, m.last_name, m.e_mail, d.name from university_member um join mas1 m on um.user_id=m.id join department d on um.departament_id=d.id;
 
+-- 15 - 16 labs 
+
+/*
+create view user_data AS
+select u.first_name, u.middle_name, u.last_name, a.zip_code, a.city, a.street, a.building, a.flat 
+from mas1 u left join address a on u.id=a.user_id;
+*/
+
+/*
+create view pos_mas1 AS
+select m.first_name, m.middle_name, m.last_name, m.e_mail, p.name 
+from university_member um left join mas1 m on um.user_id=m.id join position p on um.position_id=p.id;
+*/
+
+/*
+create view grop AS
+select m.first_name, m.middle_name, m.last_name, m.e_mail, g.name 
+from group_member gm join university_member um on gm.university_member_id=um.user_id 
+join grp g on gm.group_id=g.id join mas1 m on um.user_id=m.id;
+*/
+
+/*
+create view dep AS
+select m.first_name, m.middle_name, m.last_name, m.e_mail, d.name 
+from university_member um join mas1 m on um.user_id=m.id join department d on um.departament_id=d.id;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
